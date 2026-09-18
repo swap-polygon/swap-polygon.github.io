@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swap Polygon (POL) to USDC, ETH &amp; USDT</title>
+<meta name="description" content="Swap Polygon to USDC, ETH or USDT. Learn how to swap POL, compare swap routes, understand low Polygon gas fees and send funds on the right network.">
+<meta name="theme-color" content="#8247E5">
+<link rel="canonical" href="https://insert_url/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Swap Polygon">
+<meta property="og:title" content="Swap Polygon — POL to USDC, ETH &amp; USDT">
+<meta property="og:description" content="Swap Polygon with a clear view of your route. Explore POL pairs, low network gas, swap fees and practical steps to your next asset.">
+<meta property="og:url" content="https://insert_url/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Swap Polygon — POL to USDC, ETH &amp; USDT">
+<meta name="twitter:description" content="Swap Polygon: your guide to POL swaps, popular pairs, low gas fees and the right receiving network.">
+<link rel="icon" type="image/png" href="pol.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&amp;family=Manrope:wght@400;500;600;650;700;750;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{--iris:#8247e5;--iris-ink:#6731be;--ink:#292136;--quiet:#6a6275;--paper:#fcfbfe;--wash:#f4effb;--edge:#e8e0f1;--round:24px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}a{color:var(--iris-ink);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}button{font:inherit}a,button,[role=link]{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--iris);outline-offset:5px}img{object-fit:contain}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.2;letter-spacing:-.045em}h2{font-size:clamp(28px,3.3vw,40px);font-weight:750}h3{font-size:21px;font-weight:750;letter-spacing:-.025em}p{color:var(--quiet)}.violet-boundary{width:min(1160px,calc(100% - 64px));margin-inline:auto}.violet-skip{position:absolute;top:-100px;left:20px;padding:10px 18px;background:#fff;z-index:5}.violet-skip:focus{top:10px}.violet-mast{height:100px;display:flex;align-items:center;justify-content:space-between;gap:30px;border-bottom:1px solid var(--edge)}.violet-wordmark{display:flex;align-items:center;gap:10px;font-family:Manrope,sans-serif;font-size:19px;font-weight:800;letter-spacing:-.7px;white-space:nowrap}.violet-wordmark img{width:34px;height:34px}.violet-wordmark span{color:var(--iris)}.violet-nav{display:flex;align-items:center;gap:30px}.violet-nav>a:not(.violet-action){font-size:14px;font-weight:550;text-decoration:none;color:var(--quiet)}.violet-action{display:inline-flex;align-items:center;justify-content:center;gap:22px;min-height:52px;padding:12px 23px;background:var(--iris);color:#fff;text-decoration:none;border-radius:13px;font-weight:650;font-size:15px;transition:background .2s,transform .2s;box-shadow:0 6px 14px #8247e512}.violet-action:hover{background:var(--iris-ink);transform:translateY(-2px)}.violet-action--small{min-height:44px;padding:9px 19px;font-size:14px}.violet-arrow{font-size:21px;line-height:1}.violet-intro{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:start;padding:48px 0 56px}.violet-kicker{display:flex;align-items:center;gap:10px;color:var(--iris-ink);font-size:11px;font-weight:750;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:23px}.violet-kicker:before{content:"";width:21px;height:2px;background:var(--iris)}.violet-intro h1{font-size:clamp(49px,5.6vw,72px);font-weight:800;letter-spacing:-.065em;line-height:1.09;margin-bottom:24px}.violet-intro h1 span{display:block;color:var(--iris)}.violet-lede{font-size:18px;line-height:1.8;max-width:445px}.violet-hero-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:30px}.violet-quiet-link{font-size:14px;font-weight:600}.violet-notes{display:flex;gap:23px;flex-wrap:wrap;font-size:12px;color:var(--quiet);margin-top:29px}.violet-notes span:before{content:"✓";color:var(--iris);font-weight:700;margin-right:7px}.violet-swap-stage{position:relative;padding:13px 0}.violet-swap-stage:before{content:"";position:absolute;inset:-35px -30px;background:radial-gradient(ellipse,#e9dafb 0%,#f4edfc80 45%,transparent 72%);z-index:-1}.violet-ticket{background:#fff;border:1px solid #e7dcef;border-radius:28px;padding:27px;box-shadow:0 22px 65px -25px #7137b947,0 4px 14px #8247e508;cursor:pointer;transition:transform .2s,box-shadow .2s}.violet-ticket:hover{transform:translateY(-4px);box-shadow:0 28px 65px -25px #7137b95c}.violet-ticket-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;gap:12px}.violet-ticket-head strong{font-family:Manrope,sans-serif;font-size:18px;letter-spacing:-.6px}.violet-network{display:flex;align-items:center;gap:6px;border:1px solid var(--edge);padding:4px 10px;border-radius:30px;font-size:11px;color:var(--quiet)}.violet-network:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--iris)}.violet-amount-box{background:#f7f5fa;border:1px solid #efebf4;padding:18px 20px;border-radius:17px}.violet-amount-box--receive{background:#f5effe;border-color:#ebdffa}.violet-amount-label{font-size:12px;color:var(--quiet);margin-bottom:9px}.violet-amount-line{display:flex;align-items:center;justify-content:space-between;gap:16px}.violet-amount-value{font-family:Manrope,sans-serif;font-size:35px;letter-spacing:-1.3px;font-weight:650;font-variant-numeric:tabular-nums}.violet-currency{display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px}.violet-currency img{width:29px;height:29px}.violet-sub-line{display:flex;justify-content:space-between;gap:12px;font-size:11px;color:var(--quiet);margin-top:4px}.violet-transfer-glyph{display:flex;justify-content:center;height:15px;position:relative;z-index:1}.violet-transfer-glyph span{display:grid;place-items:center;width:34px;height:34px;background:white;border:4px solid white;box-shadow:0 0 0 1px var(--edge);border-radius:10px;transform:translateY(-9px);color:var(--iris);font-size:20px}.violet-gas-line{display:flex;gap:9px;align-items:center;font-size:12px;color:var(--iris-ink);margin:20px 0 15px}.violet-gas-line svg{width:16px;height:16px;flex-shrink:0}.violet-ticket-launch{display:flex;align-items:center;justify-content:space-between;border-radius:12px;padding:13px 18px;background:var(--iris);color:white;font-size:14px;font-weight:650}.violet-example{font-size:10px;text-align:center;margin-top:12px;letter-spacing:.1px}.violet-foundation{display:grid;grid-template-columns:auto 1fr auto;gap:25px;align-items:center;padding:25px 28px;border:1px solid var(--edge);border-radius:18px;background:#fff}.violet-token-stamp{font-size:11px;letter-spacing:1px;background:var(--wash);padding:9px 12px;color:var(--iris-ink);border-radius:9px;font-weight:700;white-space:nowrap}.violet-foundation p{font-size:13px;line-height:1.65}.violet-foundation a{font-size:12px;font-weight:650;white-space:nowrap}.violet-section{padding-top:60px}.violet-section-heading{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:32px}.violet-section-heading h2{max-width:690px}.violet-section-heading>p{font-size:14px;max-width:320px}.violet-overline{display:block;font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:var(--iris-ink);font-weight:700;margin-bottom:14px}.violet-trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.violet-pair{padding:26px;border:1px solid var(--edge);border-radius:var(--round);background:#fff;display:flex;flex-direction:column}.violet-pair-coins{display:flex;align-items:center;gap:14px;margin-bottom:24px;color:#a596b7}.violet-pair-coins img{width:36px;height:36px}.violet-pair h3{font-size:23px;margin-bottom:12px}.violet-pair p{font-size:14px;line-height:1.75;flex-grow:1}.violet-pair a{font-size:13px;font-weight:700;display:flex;justify-content:space-between;text-decoration:none;margin-top:23px;padding-top:18px;border-top:1px solid var(--edge)}.violet-pair:hover{border-color:#c9afe9}.violet-network-note{margin-top:19px;font-size:12px;padding-left:2px}.violet-process{display:grid;grid-template-columns:.8fr 1.2fr;gap:85px;align-items:start}.violet-process-copy{position:sticky;top:35px}.violet-process-copy p{margin-top:20px;font-size:15px}.violet-process-copy .violet-action{margin-top:27px}.violet-steps{list-style:none;margin:0;padding:0}.violet-steps li{display:grid;grid-template-columns:40px 1fr;gap:22px;padding:0 0 28px;margin-bottom:27px;border-bottom:1px solid var(--edge)}.violet-steps li:last-child{margin:0;padding-bottom:0;border:0}.violet-step-no{width:39px;height:39px;display:grid;place-items:center;background:var(--wash);border:1px solid #e5d8f6;border-radius:12px;color:var(--iris);font-size:13px;font-weight:700}.violet-steps h3{font-size:19px;margin:6px 0 9px}.violet-steps p{font-size:14px}.violet-explorer{font-size:13px;margin-top:28px;padding:17px 20px;background:var(--wash);border-radius:12px}.violet-route-grid{border:1px solid var(--edge);border-radius:var(--round);overflow:hidden;background:#fff}.violet-route{display:grid;grid-template-columns:.75fr 1.2fr 1fr;gap:35px;padding:26px 30px;align-items:start;border-bottom:1px solid var(--edge)}.violet-route:last-child{border:0}.violet-route h3{font-size:18px;margin-top:2px}.violet-route p{font-size:14px}.violet-route small{display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--iris-ink);margin-bottom:4px;font-weight:700}.violet-fee-panel{display:grid;grid-template-columns:1fr 1fr;gap:56px;background:var(--wash);border:1px solid #e6d9f6;border-radius:28px;padding:40px}.violet-fee-panel h2{margin-bottom:20px}.violet-fee-panel p{font-size:14px}.violet-fee-panel a{font-size:13px}.violet-fee-items{display:grid;gap:21px}.violet-fee-items h3{font-size:17px;margin-bottom:7px}.violet-fee-items>div+div{padding-top:20px;border-top:1px solid #dfd2ee}.violet-timing{margin-top:23px;background:white;border-radius:14px;padding:19px 22px;border:1px solid var(--edge);font-size:13px;color:var(--quiet)}.violet-timing strong{color:var(--ink)}.violet-fixes{display:grid;grid-template-columns:1fr 1fr;gap:20px}.violet-fix{border:1px solid var(--edge);border-radius:18px;padding:25px 27px;background:#fff}.violet-fix h3{font-size:18px;margin-bottom:11px}.violet-fix p{font-size:14px}.violet-learning{display:grid;grid-template-columns:1.15fr 1fr;gap:42px;align-items:center}.violet-cinema{aspect-ratio:16/9;border-radius:21px;overflow:hidden;background:#e9ddf9;position:relative;border:1px solid var(--edge)}.violet-film-button{position:relative;display:block;width:100%;height:100%;padding:0;cursor:pointer;border:0;background:#e9ddf9;color:#fff}.violet-film-button img{width:100%;height:100%;object-fit:cover;display:block}.violet-film-button:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,#211132b3)}.violet-play{display:grid;place-items:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:66px;height:66px;border-radius:50%;background:#fff;color:var(--iris);box-shadow:0 6px 25px #29213630;z-index:1}.violet-play svg{width:22px;height:22px;margin-left:3px}.violet-film-label{position:absolute;bottom:17px;left:20px;right:20px;text-align:left;font-size:12px;font-weight:600;z-index:1}.violet-cinema iframe{width:100%;height:100%;border:0;display:block}.violet-learning h2{font-size:30px;margin-bottom:16px}.violet-learning p{font-size:14px}.violet-video-meta{display:block;font-size:11px;color:var(--quiet);margin-top:15px}.violet-community{display:flex;justify-content:space-between;align-items:center;gap:35px;background:#f0e7fc;border:1px solid #decbf4;border-radius:22px;padding:30px 34px;margin-top:32px}.violet-community h3{font-size:23px;margin-bottom:10px}.violet-community p{font-size:14px;max-width:630px}.violet-community-link{flex-shrink:0;background:#fff;border:1px solid #d5b9f4;border-radius:12px;min-height:50px;padding:12px 20px;font-weight:700;font-size:13px;text-decoration:none}.violet-faq-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}.violet-faq-layout>div>p{margin-top:18px;font-size:14px}.violet-answers{border-top:1px solid var(--edge)}.violet-answers details{border-bottom:1px solid var(--edge)}.violet-answers summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:21px 0;cursor:pointer;list-style:none;font-family:Manrope,sans-serif;font-weight:700;font-size:15px;line-height:1.5;letter-spacing:-.3px}.violet-answers summary::-webkit-details-marker{display:none}.violet-answers summary:after{content:"+";color:var(--iris);font-size:22px;font-weight:400}.violet-answers details[open] summary:after{content:"−"}.violet-answers details p{padding:0 25px 22px 0;font-size:14px}.violet-last-call{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:38px 42px;border:1px solid #e3d1f9;border-radius:24px;margin-top:80px;background:linear-gradient(110deg,#eee2fd,#f6f0fc 75%)}.violet-last-call h2{font-size:29px}.violet-last-call p{font-size:14px;margin-top:9px}.violet-foot{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:34px 0;margin-top:44px;border-top:1px solid var(--edge);font-size:12px;color:var(--quiet)}.violet-foot .violet-wordmark{font-size:14px}.violet-foot .violet-wordmark img{width:24px;height:24px}.violet-foot-links{display:flex;gap:22px}.violet-foot a{color:var(--quiet);text-decoration:none}
+@media(min-width:1400px){.violet-intro{padding-top:56px;padding-bottom:64px}}@media(max-width:1000px){.violet-intro{gap:35px}.violet-nav{gap:20px}.violet-process{gap:40px}.violet-pair{padding:22px}.violet-community{gap:25px}.violet-fee-panel{gap:30px}.violet-learning{gap:28px}.violet-faq-layout{gap:35px}}@media(max-width:760px){.violet-boundary{width:calc(100% - 40px)}.violet-mast{height:82px;gap:12px}.violet-wordmark{font-size:16px}.violet-wordmark img{width:28px;height:28px}.violet-nav>a:not(.violet-action){display:none}.violet-action--small{padding:9px 14px;font-size:12px;gap:12px}.violet-intro{grid-template-columns:1fr;gap:37px;padding:51px 0 42px}.violet-intro h1{font-size:61px}.violet-intro h1 span{display:inline}.violet-lede{max-width:540px;font-size:17px}.violet-swap-stage{width:min(100%,460px);margin-inline:auto;padding:10px 0}.violet-swap-stage:before{inset:-20px -16px}.violet-ticket{padding:24px}.violet-foundation{grid-template-columns:1fr;gap:13px;padding:22px}.violet-token-stamp{justify-self:start}.violet-section{padding-top:65px}.violet-section-heading{display:block;margin-bottom:26px}.violet-section-heading>p{margin-top:16px;max-width:100%}.violet-trio{grid-template-columns:1fr;gap:15px}.violet-pair{padding:24px}.violet-pair-coins{margin-bottom:18px}.violet-pair p{max-width:530px}.violet-process{grid-template-columns:1fr;gap:35px}.violet-process-copy{position:static}.violet-route{grid-template-columns:1fr;gap:14px;padding:25px}.violet-fee-panel{grid-template-columns:1fr;padding:27px;gap:30px}.violet-fixes{grid-template-columns:1fr;gap:15px}.violet-learning{grid-template-columns:1fr;gap:25px}.violet-community{display:block;padding:27px}.violet-community-link{display:inline-flex;align-items:center;margin-top:22px;white-space:normal}.violet-faq-layout{grid-template-columns:1fr;gap:27px}.violet-last-call{display:block;padding:30px;margin-top:60px}.violet-last-call .violet-action{margin-top:24px}.violet-foot{flex-wrap:wrap;gap:20px}.violet-foot-links{gap:18px}}@media(max-width:390px){.violet-boundary{width:calc(100% - 32px)}.violet-wordmark{font-size:14px;gap:7px}.violet-intro h1{font-size:52px}.violet-hero-actions{gap:18px}.violet-ticket{padding:20px}.violet-amount-box{padding:16px}.violet-amount-value{font-size:31px}.violet-currency{font-size:14px}.violet-notes{gap:15px}.violet-ticket-head strong{font-size:16px}.violet-network{font-size:10px;padding-inline:8px}.violet-community-link{padding-inline:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.violet-action:hover,.violet-ticket:hover{transform:none}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://insert_url/#webpage",
+      "url": "https://insert_url/",
+      "name": "Swap Polygon — POL to USDC, ETH & USDT",
+      "description": "Swap Polygon to USDC, ETH or USDT. Learn how to swap POL, compare swap routes, understand low Polygon gas fees and send funds on the right network.",
+      "inLanguage": "en",
+      "about": {"@type": "Thing", "name": "Swap Polygon"},
+      "mentions": {"@type": "CollectionPage", "@id": "https://www.reddit.com/r/0xPolygon/", "url": "https://www.reddit.com/r/0xPolygon/", "name": "Polygon community discussions", "isPartOf": {"@type": "WebSite", "name": "Reddit", "url": "https://www.reddit.com/"}},
+      "video": {"@id": "https://insert_url/#polygon-video"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://insert_url/#faq",
+      "mainEntity": [
+        {"@type": "Question", "name": "How do I swap Polygon to USDC?", "acceptedAnswer": {"@type": "Answer", "text": "Select POL on Polygon PoS as the asset you pay and USDC as the asset you receive. Choose the receiving network, enter your amount and receiving address, then review the quote. Follow the displayed transaction instructions and keep enough POL in your wallet for gas."}},
+        {"@type": "Question", "name": "Do I swap Polygon using POL or MATIC?", "acceptedAnswer": {"@type": "Answer", "text": "Use POL for the native token on Polygon PoS. MATIC on Polygon PoS upgraded automatically to POL on September 4, 2024. An old wallet label can still say MATIC; update the wallet or network token symbol. MATIC held on Ethereum has a separate migration process."}},
+        {"@type": "Question", "name": "What are Polygon swap fees?", "acceptedAnswer": {"@type": "Answer", "text": "There are separate cost layers: the Polygon network gas fee, the service fee or spread in the swap quote, and any destination-network or withdrawal fee. Polygon PoS gas is typically very low and paid in POL. Compare the final amount received for the same input and destination network."}},
+        {"@type": "Question", "name": "Can I swap Polygon to ETH on Ethereum?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, through a route that explicitly supports POL on Polygon PoS to ETH on Ethereum. Select Ethereum as the receiving network. WETH received on Polygon stays on Polygon; it is not native ETH on Ethereum. Check both the token and network before confirming."}},
+        {"@type": "Question", "name": "How long does a Polygon swap take?", "acceptedAnswer": {"@type": "Answer", "text": "Timing includes Polygon transaction confirmation, service processing and confirmation on the receiving network. Polygon confirmations are fast, but cross-chain delivery follows the full route. Use the order status and transaction hashes to track each stage."}},
+        {"@type": "Question", "name": "Why does my Polygon swap show insufficient gas?", "acceptedAnswer": {"@type": "Answer", "text": "Your wallet needs native POL on Polygon PoS to pay network gas. Reduce the amount you are swapping or add POL on the same network. USDC, USDT and WETH do not replace the native gas balance for a standard wallet transaction."}}
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://insert_url/#polygon-video",
+      "name": "How to Swap Crypto in MetaMask (MetaMask Swap Tutorial)",
+      "description": "A step-by-step MetaMask swap walkthrough. MetaMask supports the Polygon network, so the same in-wallet swap flow applies to POL.",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ebnW9lXv4Us/hqdefault.jpg",
+      "uploadDate": "2024-02-27",
+      "duration": "PT5M35S",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ebnW9lXv4Us",
+      "publisher": {"@type": "Organization", "name": "MoneyZG"},
+      "isPartOf": {"@id": "https://insert_url/#webpage"}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="violet-skip" href="#main">Skip to content</a>
+<header class="violet-boundary violet-mast">
+  <div class="violet-wordmark"><img src="pol.png" alt="Polygon" width="34" height="34">swap<span>polygon</span></div>
+  <nav class="violet-nav" aria-label="Main navigation">
+    <a href="#how">How it works</a><a href="#pairs">Popular pairs</a><a href="#fees">Fees</a>
+    <a class="violet-action violet-action--small" href="/dashboard/">Swap Polygon <span class="violet-arrow" aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main" class="violet-boundary">
+  <section class="violet-intro" aria-labelledby="hero-title">
+    <div>
+      <div class="violet-kicker">Low-gas Polygon (POL) swaps</div>
+      <h1 id="hero-title">Swap <span>Polygon</span></h1>
+      <p class="violet-lede">Swap Polygon to the asset you need next. Swap POL to USDC, ETH or USDT, with very low Polygon gas and a clear route from one asset to another.</p>
+      <div class="violet-hero-actions"><a class="violet-action" href="/dashboard/">Swap Polygon now <span class="violet-arrow" aria-hidden="true">↗</span></a><a class="violet-quiet-link" href="#how">See how it works</a></div>
+      <div class="violet-notes"><span>POL is the new MATIC</span><span>Gas paid in POL</span></div>
+    </div>
+    <div class="violet-swap-stage">
+      <div class="violet-ticket" id="polygon-converter" role="link" tabindex="0" aria-label="Swap Polygon: open the app to swap POL to USDC" data-destination="/dashboard/">
+        <div class="violet-ticket-head"><strong>Your next move</strong><span class="violet-network">Polygon PoS</span></div>
+        <div class="violet-amount-box">
+          <div class="violet-amount-label">You pay POL</div>
+          <div class="violet-amount-line"><span class="violet-amount-value">1,000</span><span class="violet-currency"><img src="pol.png" alt="" width="29" height="29">POL</span></div>
+          <div class="violet-sub-line"><span>Polygon</span><span>Polygon PoS network</span></div>
+        </div>
+        <div class="violet-transfer-glyph" aria-hidden="true"><span>↓</span></div>
+        <div class="violet-amount-box violet-amount-box--receive">
+          <div class="violet-amount-label">You get USDC</div>
+          <div class="violet-amount-line"><span class="violet-amount-value">100.00</span><span class="violet-currency"><img src="usdc.png" alt="" width="29" height="29">USDC</span></div>
+          <div class="violet-sub-line"><span>USD Coin</span><span>Polygon PoS network</span></div>
+        </div>
+        <div class="violet-gas-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m13 2-8 12h6l-1 8 9-13h-7l1-7Z"/></svg><span>Very low Polygon gas. Paid in POL.</span></div>
+        <div class="violet-ticket-launch"><span>Swap Polygon</span><span class="violet-arrow" aria-hidden="true">↗</span></div>
+        <p class="violet-example">Example swap · Get your current quote in the app</p>
+      </div>
+    </div>
+  </section>
+  <aside class="violet-foundation" aria-label="Polygon token update">
+    <span class="violet-token-stamp">MATIC → POL</span>
+    <p>Same Polygon roots. New token ticker. <strong>POL replaced MATIC as Polygon PoS’s native gas and staking token on September 4, 2024.</strong> Native balances on Polygon PoS upgraded automatically.</p>
+    <a href="https://polygon.technology/blog/matic-to-pol-migration-is-now-live-everything-you-need-to-know" target="_blank" rel="noopener noreferrer">The official upgrade ↗</a>
+  </aside>
+  <section id="pairs" class="violet-section" aria-labelledby="pair-title">
+    <div class="violet-section-heading"><div><span class="violet-overline">One starting point. More possibilities.</span><h2 id="pair-title">Swap Polygon to USDC, ETH or USDT — see how much you get</h2></div><p>Choose your next asset.<br>Then choose where it arrives.</p></div>
+    <div class="violet-trio">
+      <article class="violet-pair"><div class="violet-pair-coins"><img src="pol.png" alt="POL" width="36" height="36"><span aria-hidden="true">→</span><img src="usdc.png" alt="USDC" width="36" height="36"></div><h3>POL → USDC</h3><p>Move into a dollar-denominated stablecoin for payments or your next trade. Match the receiving network and distinguish native USDC from bridged USDC.e.</p><a href="/dashboard/">Swap Polygon to USDC <span aria-hidden="true">↗</span></a></article>
+      <article class="violet-pair"><div class="violet-pair-coins"><img src="pol.png" alt="POL" width="36" height="36"><span aria-hidden="true">→</span><img src="eth.png" alt="ETH" width="36" height="36"></div><h3>POL → ETH</h3><p>Swap to Ether for the Ethereum ecosystem. Select Ethereum to receive native ETH there; WETH on Polygon is a different token and network destination.</p><a href="/dashboard/">Swap Polygon to ETH <span aria-hidden="true">↗</span></a></article>
+      <article class="violet-pair"><div class="violet-pair-coins"><img src="pol.png" alt="POL" width="36" height="36"><span aria-hidden="true">→</span><img src="usdt.png" alt="USDT" width="36" height="36"></div><h3>POL → USDT</h3><p>Swap to a widely used dollar-denominated stablecoin. Select the exact USDT network accepted by your receiving wallet or exchange deposit address.</p><a href="/dashboard/">Swap Polygon to USDT <span aria-hidden="true">↗</span></a></article>
+    </div>
+    <p class="violet-network-note">Your route is the combination of token + network. Review available destinations and the final receiving amount in the app.</p>
+  </section>
+  <section id="how" class="violet-section" aria-labelledby="how-title">
+    <div class="violet-process">
+      <div class="violet-process-copy"><span class="violet-overline">From POL to your next asset</span><h2 id="how-title">How to swap Polygon in 4 steps</h2><p>Start with native POL on Polygon PoS and a receiving address for your chosen asset. Keep a little POL aside for the network fee.</p><a class="violet-action" href="/dashboard/">Start your Polygon swap <span class="violet-arrow" aria-hidden="true">↗</span></a></div>
+      <div><ol class="violet-steps">
+        <li><span class="violet-step-no">01</span><div><h3>Choose your pair and networks</h3><p>Select POL on Polygon PoS as your input. Choose USDC, ETH or USDT and the receiving network. POL on Ethereum is a separate route from native POL on Polygon.</p></div></li>
+        <li><span class="violet-step-no">02</span><div><h3>Review the full quote</h3><p>Enter your amount. Check the minimum, service fee or spread, destination charges and quote expiry. Compare the final amount you receive, then check your receiving address.</p></div></li>
+        <li><span class="violet-step-no">03</span><div><h3>Send or confirm the transaction</h3><p>Follow the route’s displayed instructions. For a deposit-based swap, send the exact requested amount to the order address on Polygon PoS. For a wallet-executed swap, review and sign the transaction in your wallet.</p></div></li>
+        <li><span class="violet-step-no">04</span><div><h3>Follow your asset to its destination</h3><p>For a deposit-based route, the service releases the asset after your Polygon transaction confirms and order processing completes. Track the payout on the destination network using its transaction hash.</p></div></li>
+      </ol><div class="violet-explorer">Already sent POL? <a href="https://polygonscan.com/" target="_blank" rel="noopener noreferrer">Check your transaction on PolygonScan ↗</a></div></div>
+    </div>
+  </section>
+  <section class="violet-section" aria-labelledby="where-title">
+    <div class="violet-section-heading"><div><span class="violet-overline">Find the route that fits</span><h2 id="where-title">Best place to swap Polygon: compare rate, fees and speed</h2></div><p>Three common ways to swap POL. Compare the complete journey, including delivery to your wallet.</p></div>
+    <div class="violet-route-grid">
+      <article class="violet-route"><h3>Instant swap service</h3><p><small>The workflow</small>Choose a pair, review a quote and follow the order instructions. Deposit-based services process the exchange after receiving your POL.</p><p><small>What to compare</small>Minimum amount, rate type, service spread, receiving network and payout fees.</p></article>
+      <article class="violet-route"><h3>Centralized exchange</h3><p><small>The workflow</small>Deposit POL to an exchange account, trade an available market, then withdraw the output asset to your wallet.</p><p><small>What to compare</small>Account verification, deposit support for Polygon PoS, trading fees and withdrawal costs.</p></article>
+      <article class="violet-route"><h3>In-wallet swap</h3><p><small>The workflow</small>Open your wallet’s swap feature, choose a supported route and approve the transaction. Some routes include cross-chain delivery.</p><p><small>What to compare</small>Route liquidity, wallet fees, token approvals, slippage and the destination network.</p></article>
+    </div>
+  </section>
+  <section id="fees" class="violet-section" aria-labelledby="fee-title">
+    <div class="violet-fee-panel">
+      <div><span class="violet-overline">Small gas. Clear costs.</span><h2 id="fee-title">How much does it cost to swap Polygon?</h2><p>Polygon PoS gas is typically very low, and the native fee token is POL. That network fee is just one part of your total swap cost.</p><p style="margin-top:16px">Polygon PoS is an EVM-compatible chain anchored to Ethereum. The broader Ethereum scaling and L2 ecosystem also includes Polygon CDK and AggLayer, which connects sovereign chains. Select the actual network shown in your wallet.</p><p style="margin-top:17px"><a href="https://docs.polygon.technology/pos/overview/" target="_blank" rel="noopener noreferrer">Polygon’s chain and fee documentation ↗</a> · <a href="https://polygon.technology/" target="_blank" rel="noopener noreferrer">Official Polygon ecosystem ↗</a></p></div>
+      <div class="violet-fee-items"><div><h3>01 / Network gas</h3><p>Paid to execute your Polygon transaction. Keep native POL available; swapping your entire balance leaves no room for gas.</p></div><div><h3>02 / Service fee &amp; spread</h3><p>A provider can charge a separate fee or include its margin in the exchange rate. Judge a quote by the output amount after these costs.</p></div><div><h3>03 / Destination costs</h3><p>Cross-chain routes and exchange withdrawals add their own costs. Low Polygon gas does not determine the fee for receiving ETH on Ethereum.</p></div></div>
+    </div>
+    <div class="violet-timing"><strong>A note on rate timing.</strong> POL prices and route liquidity move continuously. Refresh a quote just before sending. A floating rate follows the service’s execution terms; a fixed rate applies only within its stated time and deposit conditions. For an onchain route, also review price impact, slippage tolerance and minimum received.</div>
+  </section>
+  <section class="violet-section" aria-labelledby="fix-title">
+    <div class="violet-section-heading"><div><span class="violet-overline">Keep your swap moving</span><h2 id="fix-title">Cannot swap POL? Check gas, approval and liquidity</h2></div><p>Start with the network, the gas balance and the transaction status.</p></div>
+    <div class="violet-fixes">
+      <article class="violet-fix"><h3>“Insufficient funds for gas”</h3><p>Leave native POL in your Polygon wallet. Reduce the swap amount or add POL on Polygon PoS. An ERC-20 POL balance on Ethereum cannot pay Polygon gas.</p></article>
+      <article class="violet-fix"><h3>The wallet still says MATIC</h3><p>Update your wallet and network token label. Native MATIC on Polygon PoS upgraded automatically in 2024. For MATIC on Ethereum, use the migration instructions linked in the official upgrade notice above.</p></article>
+      <article class="violet-fix"><h3>The quote expired or the swap reverted</h3><p>Get a fresh quote and check the minimum amount, liquidity and slippage settings. A reverted onchain transaction still consumes gas. Check its status before submitting another transaction.</p></article>
+      <article class="violet-fix"><h3>Payment sent, output not visible</h3><p>Check PolygonScan first. If the input succeeded, review the order status and payout hash. Switch your wallet to the receiving network and verify the token contract. For a wrong-network deposit, contact the service with your order ID and hash.</p></article>
+    </div>
+  </section>
+  <section class="violet-section" aria-labelledby="learn-title">
+    <div class="violet-learning">
+      <div><span class="violet-overline">See it in action</span><h2 id="learn-title">Swap Polygon on screen: follow each step</h2><p>MetaMask supports the Polygon network, so the same in-wallet swap flow applies to your POL. Here is a step-by-step MetaMask swap walkthrough from MoneyZG.</p><span class="violet-video-meta">MoneyZG · February 27, 2024 · 5 min 35 sec</span></div>
+      <div class="violet-cinema" id="polygon-film"><button class="violet-film-button" id="polygon-play" type="button" aria-label="Play MetaMask swap tutorial, 5 minutes 35 seconds"><img src="https://i.ytimg.com/vi/ebnW9lXv4Us/hqdefault.jpg" alt="MetaMask swap tutorial video thumbnail" width="480" height="360" loading="lazy" decoding="async"><span class="violet-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 3v18l16-9Z"/></svg></span><span class="violet-film-label">Watch MetaMask swap <span aria-hidden="true">↗</span> &nbsp; 5:35</span></button></div>
+    </div>
+    <aside class="violet-community"><div><span class="violet-overline">Join the conversation</span><h3>Polygon community discussions</h3><p>Explore network updates, POL migration discussions and practical wallet questions with the Polygon community on r/0xPolygon.</p></div><a class="violet-community-link" href="https://www.reddit.com/r/0xPolygon/" target="_blank" rel="noopener noreferrer">Explore r/0xPolygon discussions ↗</a></aside>
+  </section>
+  <section id="faq" class="violet-section violet-faq-layout" aria-labelledby="faq-title">
+    <div><span class="violet-overline">The useful details</span><h2 id="faq-title">Before you swap Polygon: amounts, networks and gas</h2><p>Quick answers before your next swap.</p></div>
+    <div class="violet-answers">
+      <details open><summary>How do I swap Polygon to USDC?</summary><p>Select POL on Polygon PoS as the asset you pay and USDC as the asset you receive. Choose the receiving network, enter your amount and receiving address, then review the quote. Follow the displayed transaction instructions and keep enough POL in your wallet for gas.</p></details>
+      <details><summary>Do I swap Polygon using POL or MATIC?</summary><p>Use POL for the native token on Polygon PoS. MATIC on Polygon PoS upgraded automatically to POL on September 4, 2024. An old wallet label can still say MATIC; update the wallet or network token symbol. MATIC held on Ethereum has a separate migration process.</p></details>
+      <details><summary>What are Polygon swap fees?</summary><p>There are separate cost layers: the Polygon network gas fee, the service fee or spread in the swap quote, and any destination-network or withdrawal fee. Polygon PoS gas is typically very low and paid in POL. Compare the final amount received for the same input and destination network.</p></details>
+      <details><summary>Can I swap Polygon to ETH on Ethereum?</summary><p>Yes, through a route that explicitly supports POL on Polygon PoS to ETH on Ethereum. Select Ethereum as the receiving network. WETH received on Polygon stays on Polygon; it is not native ETH on Ethereum. Check both the token and network before confirming.</p></details>
+      <details><summary>How long does a Polygon swap take?</summary><p>Timing includes Polygon transaction confirmation, service processing and confirmation on the receiving network. Polygon confirmations are fast, but cross-chain delivery follows the full route. Use the order status and transaction hashes to track each stage.</p></details>
+      <details><summary>Why does my Polygon swap show insufficient gas?</summary><p>Your wallet needs native POL on Polygon PoS to pay network gas. Reduce the amount you are swapping or add POL on the same network. USDC, USDT and WETH do not replace the native gas balance for a standard wallet transaction.</p></details>
+    </div>
+  </section>
+  <section class="violet-last-call" aria-labelledby="ready-title"><div><h2 id="ready-title">Swap Polygon — choose what you receive</h2><p>Your POL. Your next asset. Start with a current quote.</p></div><a class="violet-action" href="/dashboard/">Swap Polygon <span class="violet-arrow" aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="violet-boundary violet-foot"><div class="violet-wordmark"><img src="pol.png" alt="" width="24" height="24">swap<span>polygon</span></div><nav class="violet-foot-links" aria-label="Footer navigation"><a href="#how">How to swap Polygon</a><a href="#faq">FAQ</a></nav></footer>
+<script>
+(() => {
+  const converter = document.getElementById('polygon-converter');
+  const openSwap = () => window.location.assign(converter.dataset.destination);
+  converter.addEventListener('click', openSwap);
+  converter.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      if (!event.repeat) openSwap();
+    }
+  });
+  document.getElementById('polygon-play').addEventListener('click', () => {
+    const frame = document.createElement('iframe');
+    frame.src = 'https://www.youtube-nocookie.com/embed/ebnW9lXv4Us?autoplay=1&rel=0';
+    frame.title = 'MoneyZG: How to Swap Crypto in MetaMask';
+    frame.loading = 'lazy';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    frame.allowFullscreen = true;
+    document.getElementById('polygon-film').replaceChildren(frame);
+    frame.focus();
+  }, { once: true });
+})();
+</script>
+</body>
+</html>
